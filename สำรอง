@@ -1,7 +1,6 @@
-import { title } from "process";
+/*- import { title } from "process";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import TaskInput from "./components/TaskInput";
 
 export default function Home() {
   const tasks: TodoItem [] = [
@@ -13,37 +12,39 @@ export default function Home() {
     // Main container
     <div className="container mx-auto">
       {/* header section */}
-      <Header/>
+      /*- <Header/>
       {/* tasks container */}
-      <div style={{ maxWidth: "400px" }} className="mx-auto">
+      /*- <div style={{ maxWidth: "400px" }} className="mx-auto">
         {/* task input */}
-        <TaskInput/>
-
+       /*- <div className="d-flex gap-1">
+          <input
+            className="form-control"
+            placeholder="Insert a task here.."
+          ></input>
+          <button className="btn btn-primary">Add</button>
+        </div>
         {/* task */}
-        <div className="d-flex p-3 gap-2 align-items-center border-bottom">
+      /*-  <div className="d-flex p-3 gap-2 align-items-center border-bottom">
           <span>Read a book</span>
           <button className="btn btn-success">Done</button>
           <button className="btn btn-danger">Delete</button>
         </div>
-
         {/* task */}
-        <div className="d-flex p-3 gap-2 align-items-center border-bottom">
+      /*-  <div className="d-flex p-3 gap-2 align-items-center border-bottom">
           <span>Take a shower</span>
           <button className="btn btn-success">Done</button>
           <button className="btn btn-danger">Delete</button>
         </div>
-
         {/* task */}
-        <div className="d-flex p-3 gap-2 align-items-center border-bottom">
+       /*- <div className="d-flex p-3 gap-2 align-items-center border-bottom">
           <span>Sleep</span>
           <button className="btn btn-success">Done</button>
           <button className="btn btn-danger">Delete</button>
         </div>
-        
       </div>
 
       {/* //footer section */}
-      <Footer year="2024" fullname = "Kachapat Punthong" studentId = "660612137"/>
+     /*- <Footer year="2024" fullname = "Kachapat Punthong" studentId = "660612137"/>
     </div>
   );
 }
