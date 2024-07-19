@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import TaskInput from "./components/TaskInput";
 
 export default function Home() {
-  const tasks: TodoItem [] = [
+  const tasks = [
     {id: 1, title: "Read a book", isDone: true },
     {id: 2, title: "Take a shower", isDone: false },
     {id: 3, title: "Sleep", isDone: false },
@@ -20,26 +20,10 @@ export default function Home() {
         <TaskInput/>
 
         {/* task */}
-        <div className="d-flex p-3 gap-2 align-items-center border-bottom">
-          <span>Read a book</span>
-          <button className="btn btn-success">Done</button>
-          <button className="btn btn-danger">Delete</button>
-        </div>
+        {tasks.map(task => (
+          <Task key={task.id} title={task.title} isDone={task.isDone} />
+        ))}
 
-        {/* task */}
-        <div className="d-flex p-3 gap-2 align-items-center border-bottom">
-          <span>Take a shower</span>
-          <button className="btn btn-success">Done</button>
-          <button className="btn btn-danger">Delete</button>
-        </div>
-
-        {/* task */}
-        <div className="d-flex p-3 gap-2 align-items-center border-bottom">
-          <span>Sleep</span>
-          <button className="btn btn-success">Done</button>
-          <button className="btn btn-danger">Delete</button>
-        </div>
-        
       </div>
 
       {/* //footer section */}
