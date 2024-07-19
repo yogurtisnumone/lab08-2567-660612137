@@ -1,3 +1,6 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 export default function Home() {
   return (
     // Main container
@@ -41,11 +44,7 @@ export default function Home() {
       </div>
 
       {/* //footer section */}
-      <div className="mt-3">
-        <p className="text-secondary text-center">
-          copyright © 2023 Chayanin Suatap 12345678
-        </p>
-      </div>
+      <Footer name = "Kachapat Punthong"/>
     </div>
   );
 }
