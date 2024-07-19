@@ -6,7 +6,7 @@ export default function Home() {
     // Main container
     <div className="container mx-auto">
       {/* header section */}
-
+      <Header/>
       {/* tasks container */}
       <div style={{ maxWidth: "400px" }} className="mx-auto">
         {/* task input */}
