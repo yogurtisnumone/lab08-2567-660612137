@@ -22,7 +22,7 @@ export default function Home() {
         {/* task input */}
         <TaskInput/>
 
-        {/* task */}
+        {/* task list*/}
         <Task title={tasks[0].title} isDone={tasks[0].isDone} />
         <Task title={tasks[1].title} isDone={tasks[1].isDone} />
         <Task title={tasks[2].title} isDone={tasks[2].isDone} />
