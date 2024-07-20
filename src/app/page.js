@@ -12,15 +12,17 @@ export default function Home() {
   return (
     // Main container
     <div className="container mx-auto">
+      
       {/* header section */}
       <Header/>
+
       {/* tasks container */}
       <div style={{ maxWidth: "400px" }} className="mx-auto">
+        
         {/* task input */}
         <TaskInput/>
 
         {/* task */}
-        
         <Task {...tasks[0]} />
         <Task {...tasks[1]} />
         <Task {...tasks[2]} />
