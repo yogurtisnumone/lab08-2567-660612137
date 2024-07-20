@@ -23,9 +23,9 @@ export default function Home() {
         <TaskInput/>
 
         {/* task */}
-        <Task {...tasks[0]} />
-        <Task {...tasks[1]} />
-        <Task {...tasks[2]} />
+        <Task title={tasks[0].title} isDone={tasks[0].isDone} />
+        <Task title={tasks[1].title} isDone={tasks[1].isDone} />
+        <Task title={tasks[2].title} isDone={tasks[2].isDone} />
 
       </div>
 
