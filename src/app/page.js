@@ -1,4 +1,4 @@
-import { title } from "process";
+import Task from "./components/Task";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import TaskInput from "./components/TaskInput";
