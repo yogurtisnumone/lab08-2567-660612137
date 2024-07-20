@@ -20,9 +20,10 @@ export default function Home() {
         <TaskInput/>
 
         {/* task */}
-        {tasks.map(task => (
-          <Task key={task.id} title={task.title} isDone={task.isDone} />
-        ))}
+        
+        <Task {...tasks[0]} />
+        <Task {...tasks[1]} />
+        <Task {...tasks[2]} />
 
       </div>
 
